@@ -1,0 +1,31 @@
+# Core dependencies
+fastapi
+uvicorn
+
+# LangChain ecosystem
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-ollama
+langchain-openai
+
+# Machine learning
+faiss-cpu
+
+# System utilities
+psutil
+
+sentence-transformers
+
+#auth
+bcrypt>=5.0.0
+fastapi[standard]>=0.127.0
+langchain-openai>=1.1.6
+passlib>=1.7.4
+pwdlib[argon2]>=0.3.0
+pyjwt>=2.10.1
+python-dotenv>=1.2.1
+
+# db
+psycopg2-binary
+sqlmodel

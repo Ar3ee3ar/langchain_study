@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chatbot
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+
+networks:
+  default:
+    name: chatbot-network
+    external: true
